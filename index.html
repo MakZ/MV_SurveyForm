@@ -2,40 +2,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Survey form</title>
   </head>
   <body>
     <div class="title">
-      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <h1 id="title">Survey Form</h1>
       <p id="description">
         Thank you for taking the time to help us improve the platform
       </p>
     </div>
     <div class="mainForm">
         
-      <form action="" id="survey-form"></div>
-        <div class="mainForm">
+      <form action="" id="survey-form">
+        <div class="form-group">
         
-        <label for="name" class="name">Name: </label>
-        <input type="text" id="name" placeholder="Enter your name" />
+        <p><label for="name" id="name" class="name">Name: </label></p>
+        <input type="name" id="name" placeholder="Enter your name" />
     </div>
         <div class="form-group">
-        <label for="email" class="email">Email: </label>
+                <p><label for="email" id="email" class="email">Email: </label></p>
+        <input type="email" id="email" placeholder="Enter your email" />
     </div>
-        <div class="form-group">
-        <input type="text" id="name" placeholder="Enter your email" />
-    </div>
-        <div class="form-group">
 
-        <label for="name" class="age"
-          >Age <span class="optional">(optional)</span>:
-        </label>
-    </div>
         <div class="form-group">
-        <input type="number" id="name" placeholder="10" min="10" max="100"/>
-        <p for="role">Which option best describes your current role?</p>
+                <p><label for="name" class="age"
+          >Age <span class="optional">(optional)</span>:
+        </label></p>
+        <input type="number" id="number" placeholder="10" min="10" max="100"/>
+
     </div>
     <div class="form-group">
+            <p for="role">Which option best describes your current role?</p>
         <select name="roles" id="roles">
           <option disabled selected value">Select current role</option>
             <option value="Full-time">Full time</option>
@@ -102,7 +100,9 @@
             </button>
           </div>
         </div>
+        </div>
       </form>
     </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
