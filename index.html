@@ -16,17 +16,30 @@
         
       <form action="" id="survey-form">
         <div class="form-group">
-        
-        <p><label for="name" id="name" class="name">Name: </label></p>
-        <input type="name" id="name" placeholder="Enter your name" />
-    </div>
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
         <div class="form-group">
-                <p><label for="email" id="email" class="email">Email: </label></p>
-        <input type="email" id="email" placeholder="Enter your email" />
-    </div>
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
 
         <div class="form-group">
-                <p><label for="name" class="age"
+                <p><label for="name" class="age" id="number-label"
           >Age <span class="optional">(optional)</span>:
         </label></p>
         <input type="number" id="number" placeholder="10" min="10" max="100"/>
@@ -34,7 +47,7 @@
     </div>
     <div class="form-group">
             <p for="role">Which option best describes your current role?</p>
-        <select name="roles" id="roles">
+        <select name="roles" id="dropdown">
           <option disabled selected value">Select current role</option>
             <option value="Full-time">Full time</option>
             <option value="Part-time">Part time</option>
@@ -50,13 +63,14 @@
               type="radio"
               class="input-radio"
               value="definitely"
+              name="user-recommend"
             />Definitely</label
           >
           <label>
-            <input type="radio" class="input-radio" value="Maybe" />Maybe</label
+            <input type="radio" class="input-radio" value="Maybe" name="user-recommend" />Maybe</label
           >
           <label>
-            <input type="radio" class="input-radio" value="Not-sure" />Not
+            <input type="radio" class="input-radio" value="Not-sure"name="user-recommend" />Not
             sure</label
           >
         </div>
@@ -64,9 +78,9 @@
           <p>What is your favorite feature of freeCodeCamp?</p>
           <select name="mostLike" id="most-like">
             <option disabled selected value">Select an option</option>
-              <option value="Challenges">Challenges</option>
-              <option value="Projects">Projects</option>
-              <option value="Community">Community</option>
+              <option value="Challenges" " >Challenges</option>
+              <option value="Projects" >Projects</option>
+              <option value="Community" >Community</option>
               <option value="Open-source">Open source</option>
             
           </select>
