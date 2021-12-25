@@ -17,6 +17,10 @@ Survey Form
 - GitHub: [@MakZ](https://github.com/MakZ)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/maksymilian-zuzel-70101a174/)
 
+👤 **Author**
+
+- GitHub: [@ShoiraTa](https://github.com/ShoiraTa)
+
 [Live Demo Link](https://makz.github.io/MV_SurveyForm/)
 
 
